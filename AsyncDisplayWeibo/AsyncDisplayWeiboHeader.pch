@@ -1,0 +1,46 @@
+//
+//  AsyncDisplayWeiboHeader.pch
+//  AsyncDisplayWeibo
+//
+//  Created by zhn on 2017/8/2.
+//  Copyright © 2017年 zhn. All rights reserved.
+//
+
+#ifndef AsyncDisplayWeiboHeader_pch
+#define AsyncDisplayWeiboHeader_pch
+#import <UIKit/UIKit.h>
+#import "UIImageView+CornerRadius.h"
+//#import "UIImageView+WebCache.h"
+#import <AsyncDisplayKit/AsyncDisplayKit.h>
+#import "WBStatusLayout.h"
+#import "WBStatusHelper.h"
+#import "WBRichTextHelper.h"
+#import <YYText/YYText.h>
+#import "YYModel.h"
+#import "UIImageView+YYWebImage.h"
+// -----------------------常用宏-----------------------
+// 屏幕宽高
+#define SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+// 计算适配的值
+#define KAUTOSCALE(num) ((SCREEN_WIDTH/375)*num)
+// 颜色
+#define RGBCOLOR(r,g,b)    [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
+#define RGBCOLORALPHA(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
+#define RandomColor     [UIColor colorWithRed:arc4random_uniform(256)/255.0 green:arc4random_uniform(256)/255.0 blue:arc4random_uniform(256)/255.0 alpha:1.0]
+
+// -----------------------常量值-----------------------
+#define KCellIconWidthHeight KAUTOSCALE(40)// 头像宽高
+#define KCellPadding KAUTOSCALE(12)// 内边距
+#define KCellPicPadding KAUTOSCALE(5)// 图片间的间距
+#define KCellPaddingText KAUTOSCALE(10)// 文字和其他内容的留白
+#define KCellContentWidth (SCREEN_WIDTH - 2 * KCellPadding)// 内容的宽度
+#define KCellNickNameMaxWidth KAUTOSCALE((SCREEN_WIDTH - 110))// 昵称的最长宽度
+#define KCellNickNameFont KAUTOSCALE(16)// 昵称的字体
+#define KCellSourceFont KAUTOSCALE(12)// 来源的字体
+#define KCellContentTextFont KAUTOSCALE(17)// 内容的字体
+
+// -----------------------颜色值-----------------------
+#define KCellLinkerColor RGBCOLOR(82,126,173)
+#define KCellLinkerBackColor RGBCOLOR(191,223,254)
+#endif
