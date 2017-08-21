@@ -28,6 +28,8 @@
 		CD49E3301F4AB9E400D18762 /* weibo_2.json in Resources */ = {isa = PBXBuildFile; fileRef = CD49E32F1F4AB9E400D18762 /* weibo_2.json */; };
 		CD49E3331F4ACC7300D18762 /* mainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49E3321F4ACC7300D18762 /* mainViewController.m */; };
 		CD49E3361F4ACDBC00D18762 /* WBTimeLineHardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49E3351F4ACDBC00D18762 /* WBTimeLineHardViewController.m */; };
+		CD49E3391F4AD31D00D18762 /* normalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49E3381F4AD31D00D18762 /* normalViewController.m */; };
+		CD49E33D1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD49E33C1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.m */; };
 		CDAA9A691F35F6AA0083910F /* Emoticons.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDAA9A681F35F6AA0083910F /* Emoticons.bundle */; };
 		CDAA9A6C1F35FF980083910F /* WBEmojiContentModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA9A6B1F35FF980083910F /* WBEmojiContentModel.m */; };
 		CDAA9A721F39EB110083910F /* WBTimeLineCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = CDAA9A711F39EB110083910F /* WBTimeLineCardView.m */; };
@@ -97,6 +99,10 @@
 		CD49E3321F4ACC7300D18762 /* mainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainViewController.m; sourceTree = "<group>"; };
 		CD49E3341F4ACDBC00D18762 /* WBTimeLineHardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTimeLineHardViewController.h; sourceTree = "<group>"; };
 		CD49E3351F4ACDBC00D18762 /* WBTimeLineHardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTimeLineHardViewController.m; sourceTree = "<group>"; };
+		CD49E3371F4AD31D00D18762 /* normalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = normalViewController.h; sourceTree = "<group>"; };
+		CD49E3381F4AD31D00D18762 /* normalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = normalViewController.m; sourceTree = "<group>"; };
+		CD49E33B1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTimeLineNormalTableViewCell.h; sourceTree = "<group>"; };
+		CD49E33C1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTimeLineNormalTableViewCell.m; sourceTree = "<group>"; };
 		CDAA9A681F35F6AA0083910F /* Emoticons.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Emoticons.bundle; sourceTree = "<group>"; };
 		CDAA9A6A1F35FF980083910F /* WBEmojiContentModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBEmojiContentModel.h; sourceTree = "<group>"; };
 		CDAA9A6B1F35FF980083910F /* WBEmojiContentModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBEmojiContentModel.m; sourceTree = "<group>"; };
@@ -190,10 +196,13 @@
 				CDC5F0311F317E9100B57757 /* AsyncDisplayWeiboHeader.pch */,
 				CD49E3311F4ACC7300D18762 /* mainViewController.h */,
 				CD49E3321F4ACC7300D18762 /* mainViewController.m */,
+				CD49E3371F4AD31D00D18762 /* normalViewController.h */,
+				CD49E3381F4AD31D00D18762 /* normalViewController.m */,
 				CDC5F00F1F30294200B57757 /* WBStatusTImeLineViewController.h */,
 				CDC5F0101F30294200B57757 /* WBStatusTImeLineViewController.m */,
 				CD49E3341F4ACDBC00D18762 /* WBTimeLineHardViewController.h */,
 				CD49E3351F4ACDBC00D18762 /* WBTimeLineHardViewController.m */,
+				CD49E33A1F4AD32000D18762 /* Normal */,
 				CD49E32C1F4A840F00D18762 /* Easy */,
 				CD3A76DA1F330DB500C928C6 /* Hard */,
 				CD3A76F41F38164100C928C6 /* Categorys */,
@@ -273,6 +282,15 @@
 				CDAA9A711F39EB110083910F /* WBTimeLineCardView.m */,
 			);
 			name = Easy;
+			sourceTree = "<group>";
+		};
+		CD49E33A1F4AD32000D18762 /* Normal */ = {
+			isa = PBXGroup;
+			children = (
+				CD49E33B1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.h */,
+				CD49E33C1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.m */,
+			);
+			name = Normal;
 			sourceTree = "<group>";
 		};
 		CDAA9A671F35F6970083910F /* Resources */ = {
@@ -510,6 +528,7 @@
 			files = (
 				CD3A76F31F3814E100C928C6 /* WBTimeHelper.m in Sources */,
 				CD49E3281F4A803200D18762 /* WBTimeLineCardNode.m in Sources */,
+				CD49E33D1F4AD33A00D18762 /* WBTimeLineNormalTableViewCell.m in Sources */,
 				CDC5F0221F30635000B57757 /* WBStatusHelper.m in Sources */,
 				CDAA9A6C1F35FF980083910F /* WBEmojiContentModel.m in Sources */,
 				CD49E3251F4A7FDE00D18762 /* WBTimeLineContentNode.m in Sources */,
@@ -520,6 +539,7 @@
 				CD3A76E61F34645300C928C6 /* WBRichTextHelper.m in Sources */,
 				CDC5F0111F30294200B57757 /* WBStatusTImeLineViewController.m in Sources */,
 				CD3A76D91F32EEEE00C928C6 /* WBTimeLineHeadNode.m in Sources */,
+				CD49E3391F4AD31D00D18762 /* normalViewController.m in Sources */,
 				CD1E92321F300EF400DD26D7 /* AppDelegate.m in Sources */,
 				CD3A76D61F31CBC200C928C6 /* WBTimeLineCell.m in Sources */,
 				CDC5F0371F31AF2A00B57757 /* WBTimelineItemModel.m in Sources */,

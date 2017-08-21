@@ -9,6 +9,7 @@
 #import "mainViewController.h"
 #import "WBTimeLineHardViewController.h"
 #import "WBStatusTImeLineViewController.h"
+#import "normalViewController.h"
 
 @interface mainViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic,strong) UITableView *tableView;
@@ -21,7 +22,7 @@
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
     self.tableView.frame = self.view.bounds;
-    self.titleArray = @[@"easy",@"hard",@"layout"];
+    self.titleArray = @[@"easy",@"hard",@"normal"];
 }
 
 #pragma mark - delegate datasource
@@ -53,7 +54,7 @@
             break;
         case 2:
         {
-        
+            [self.navigationController pushViewController:[[normalViewController alloc]init] animated:YES];
         }
             break;
         default:
