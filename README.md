@@ -4,11 +4,11 @@ AsyncDisplayKit 的node可以嵌套view来实现。我想试试不用它的layou
 
 用了如下三种情况来测试。
 
-+1.除了富文本之外其他的都用AsyncDisplaykit。在4s下掉帧还是相当的严重的。感觉这种这样的写法太鸡肋的。
++ 1.除了富文本之外其他的都用AsyncDisplaykit。在4s下掉帧还是相当的严重的。感觉这种这样的写法太鸡肋的。
 
-+2.只是差不多包了一层asdisplaynode。用了yylabel的异步加载网络图片也是用的yyimage在4s下的掉帧不明显。
++ 2.只是差不多包了一层asdisplaynode。用了yylabel的异步加载网络图片也是用的yyimage在4s下的掉帧不明显。
 
-+3.用uikit来实现。用了yylabel的异步加载网络图片也是用的yyimage在4s下的掉帧不明显。和2的情况基本上没大差别。
++ 3.用uikit来实现。用了yylabel的异步加载网络图片也是用的yyimage在4s下的掉帧不明显。和2的情况基本上没大差别。
 
 在6s下都不掉帧。。。（最好能够用自AsyncDisplaykit的layout来实现一遍看看掉帧情况，但是这个工作量太大了）
 
