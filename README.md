@@ -17,3 +17,7 @@ AsyncDisplayKit 的node可以嵌套view来实现。我想试试不用它的layou
 
 综合上面。结合我自己的开发。我认为一般开发中卡顿的影响比较大的就是位置的获取。如果用autolayout稍微复杂点基本上在4s上掉帧会非常严重。。。。用手动计算frame + yylabel的异步绘制 + yywebimage的高效的图片解码 基本上界面不会掉帧。不过这样的方式相对来说代码比较恶心不太好维护。。但是如果用AsyncDisplayKit的layout的维护成本又相对高好多。。。我还是倾向于不用AsyncDisplayKit
 
+
+<video src="http://lxqncdn.miaopai.com/stream/BvmaXK2X49guVi4ehlOjjQ__.mp4" width="320" height="240" controls="controls">
+Your browser does not support the video tag.
+</video>
